@@ -1,0 +1,31 @@
+/* Don't change the existing CSS. */
+
+
+.box {
+  background-color: blue;
+  padding: 10px;
+}
+
+.inner-box {
+  background-color: red;
+}
+
+#outer-box {
+ background-color: purple;
+}
+
+p {
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+This won't get applied because the selector specificity below is way more specific!
+.white-text {
+  color: red;
+} */
+
+p[class="white-text"] {
+  color: white;
+}

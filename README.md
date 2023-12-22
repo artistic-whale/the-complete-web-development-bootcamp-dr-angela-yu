@@ -15,4 +15,4 @@ The used technologies are:
 
 In addition, Web3 development will take place as well.
 
-> *"Once you get your code to do what you want it to do, there's joy in it!"*
+> *"Once you get your code to do what you want it to do, there's joy in it!" - Dr. Angela Yu*

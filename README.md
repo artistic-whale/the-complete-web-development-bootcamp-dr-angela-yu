@@ -15,4 +15,5 @@ The used technologies are:
 
 In addition, Web3 development will take place as well.
 
-> *"Once you get your code to do what you want it to do, there's joy in it!" - Dr. Angela Yu*
+> *Once you get your code to do what you want it to do, there's joy in it!*
+> *The most difficult part is just getting yourself to sit down, and get started. - Dr. Angela Yu*

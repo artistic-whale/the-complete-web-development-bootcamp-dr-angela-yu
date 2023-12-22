@@ -39,3 +39,19 @@ document.querySelectorAll("#list .item")[2].style.color = "blue";
 document.querySelector("h1").style.color = "red";
 document.querySelector("h1").style.fontSize = "10rem"; // here is fontSize CamalCase since JS uses this convention
 document.querySelector(".btn").style.backgroundColor = "yellow";
+
+
+// 120. The Separation of Concerns: Structure vs Style vs Behaviour
+/*
+With the Separation of Concerns, you make it easier to debug your code and use the things as you should them.
+For instance, HTML is just for displaying text-content, whereas CSS is just for changing the style, and JS for adding behaviour.
+
+    If a particular element is not looking the way we want it to, then we can simply dig into the stylesheet and change it.
+    But if something is not behaving the way we want it to, then we can go to the JavaScript and change it their.
+*/
+document.querySelector("button").classList;
+document.querySelector("button").classList.add("invisible"); // adds a new class name to the element(s)
+document.querySelector("button").classList.remove("invisible"); // removes a defined class name from the element(s)
+document.querySelector("button").classList.toggle("invisible"); // adds if not available, removes if available
+
+document.querySelector("h1").classList.add("huge");

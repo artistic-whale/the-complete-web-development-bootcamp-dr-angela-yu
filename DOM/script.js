@@ -55,3 +55,13 @@ document.querySelector("button").classList.remove("invisible"); // removes a def
 document.querySelector("button").classList.toggle("invisible"); // adds if not available, removes if available
 
 document.querySelector("h1").classList.add("huge");
+
+
+// 121. Text manipulation and the Text Content Property
+/*
+innerHTML gives you exactly everything which is being displayed inside the HTML element
+textContent gives you only the text content of the HTML element
+*/
+document.querySelector("h1").innerHTML = "Changed H1";
+document.querySelector("h1").innerHTML = "<em>Changed H1</em>"
+document.querySelector("h1").textContent = "Another changed H1";

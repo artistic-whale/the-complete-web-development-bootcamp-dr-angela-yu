@@ -33,3 +33,9 @@ document.querySelectorAll("#list .item"); // Gets all elements
 
 // For changing and manipulating a specific item in an array, you have to specify it's index
 document.querySelectorAll("#list .item")[2].style.color = "blue";
+
+
+// 119. Manipulating and Changing Styles of HTML Elements with JavaScript
+document.querySelector("h1").style.color = "red";
+document.querySelector("h1").style.fontSize = "10rem"; // here is fontSize CamalCase since JS uses this convention
+document.querySelector(".btn").style.backgroundColor = "yellow";

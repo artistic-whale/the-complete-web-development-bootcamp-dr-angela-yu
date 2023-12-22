@@ -65,3 +65,12 @@ textContent gives you only the text content of the HTML element
 document.querySelector("h1").innerHTML = "Changed H1";
 document.querySelector("h1").innerHTML = "<em>Changed H1</em>"
 document.querySelector("h1").textContent = "Another changed H1";
+
+
+// 122. Manipulating HTML Element Attributes
+/*
+ Everything that goes inside the tag-element, with exception of the element itself, are attributes 
+ */
+document.querySelector("a").attributes; // gives you all the available attributes of the <a>-tag element
+document.querySelector("a").getAttribute("href"); // get the value of a single attribute
+document.querySelector("a").setAttribute("href", "https://www.bing.com") // set the value of the href attribute; requires two parameters;

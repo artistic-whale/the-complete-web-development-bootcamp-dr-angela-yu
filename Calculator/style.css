@@ -30,6 +30,10 @@ body {
     margin: 1rem;
 }
 
+.calculator__operator__keys {
+    /* display: inline-grid; */
+}
+
 button {
     width: 2.5rem;
 }

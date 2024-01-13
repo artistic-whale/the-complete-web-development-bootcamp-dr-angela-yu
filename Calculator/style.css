@@ -1,0 +1,35 @@
+body {
+    background-color: #000111;
+    color: #999999;
+
+    display: grid;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    /* align-items: center;
+    justify-content: center; */
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    
+    width: fit-content;
+    border: 3px solid grey;
+    border-radius: 10px;
+}
+
+.calculator__display {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: right;
+    border: 1px solid grey;
+}
+
+.calculator__number__keys {
+    margin: 1rem;
+}
+
+button {
+    width: 2.5rem;
+}

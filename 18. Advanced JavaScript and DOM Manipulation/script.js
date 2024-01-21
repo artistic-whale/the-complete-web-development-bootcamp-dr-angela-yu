@@ -18,6 +18,11 @@ function HouseKeeper(name, age, yearsOfExperience, hotelsWorkedAt, cleaningReper
     this.yearsOfExperience = yearsOfExperience;
     this.hotelsWorkedAt = hotelsWorkedAt;
     this.cleaningRepertoire = cleaningRepertoire;
+    this.clean = function () {
+        alert("Cleaning in progress...");
+    };
 }
 
-var houseKeeper2 = new HouseKeeper("Jane", 21, 1, ["Palace Park"], ["bedroom", "lobby desk"]);
+let houseKeeper2 = new HouseKeeper("Jane", 21, 1, ["Palace Park"], ["bedroom", "lobby desk"]);
+let houseKeeper3 = new HouseKeeper("Rose", 30, 7, ["Royal Place Hotel"], ["bathroom, bedroom, lobby, staircase, elevator"]);
+houseKeeper3.clean();

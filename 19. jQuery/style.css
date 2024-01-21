@@ -1,4 +1,38 @@
 body {
     background: rgb(171,13,153);
+}
+
+.big-title {
+    font-size: 10rem;
+    color: yellow;
+    font-family: cursive;
+}
+
+.margin-50 {
+    margin: 50px;
+}
+
+button {
     background: linear-gradient(135deg, rgba(171,13,153,1) 0%, rgba(179,15,195,1) 39%, rgba(0,212,255,1) 100%); 
+    color: wheat;
+    border: none;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+button:hover {
+    background: linear-gradient(235deg, rgba(171,13,153,1) 0%, rgba(179,15,195,1) 39%, rgba(0,212,255,1) 100%);
+    animation: buttonHover 0.4s ease-in-out;
+}
+
+@keyframes buttonHover {
+    0% {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }

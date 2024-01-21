@@ -19,7 +19,7 @@ function HouseKeeper(name, age, yearsOfExperience, hotelsWorkedAt, cleaningReper
     this.hotelsWorkedAt = hotelsWorkedAt;
     this.cleaningRepertoire = cleaningRepertoire;
     this.clean = function () {
-        alert("Cleaning in progress...");
+        console.log("Cleaning in progress...");
     };
 }
 

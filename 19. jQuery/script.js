@@ -19,3 +19,10 @@ $(document).keydown(function(event) {
 $("h1").on("mouseover", function() {
     $("h1").css("color", "red");
 });
+
+
+// 157. Adding and Removing Elements with jQuery
+$("h1").before("<button>New before button</button>");
+$("h1").after("<button>New after button</button>");
+$("h1").prepend("<button>New prepend button</button>");
+$("h1").append("<button>New append button</button>");

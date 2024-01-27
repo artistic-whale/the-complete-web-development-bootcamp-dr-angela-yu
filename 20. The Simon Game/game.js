@@ -24,23 +24,24 @@ console.log(randomChosenColour);
 console.log(gamePattern);
 
 
-function makeSoundsWhenColourSelected() {
-    
-    for (i = 0; i < sounds.length; i++) {
-        let audio = new Audio(sounds[i]);
-        
-        if (sounds[i] === soundOfBlueColour) {
-            audio.play();
-        }
-    }
-}
-
 
 /** Animation flash for the selected colour boxes */
 function animationSelectedColours() {
 
     $("#" + randomChosenColour).fadeOut(100).fadeIn(100);
 
+}
+
+
+function animatePress(currentColour) {
+
+    if (randomChosenColour === currentColour) {
+        
+        $("." + currentColour).click(function () {
+            $("." + currentColour).addClass("pressed");
+        })
+
+    }
 }
 
 
@@ -66,23 +67,9 @@ function getClickedButtonID() {
 }
 
 
-nextSequence();
-animationSelectedColours();
-getClickedButtonID();
-playSound();
-/*
-// if game is over:
-if () {
-    // change h1 text to: "try again"
-    $("#level-title").text("Try again...");
-    // change h1 text color:
-    $("h1").css("color", "red");
-}
-*/
-
-
+/** Function to play the sounds of the clicked colours */
 function playSound() {
-
+    
     $("#blue").click(function () {
         let audio = new Audio("sounds/blue.mp3");
         audio.play();
@@ -102,9 +89,37 @@ function playSound() {
     $("#yellow").click(function () {
         let audio = new Audio("sounds/yellow.mp3");
         audio.play();
+        function x () {
+            $("#yellow").addClass("pressed");
+            setTimeout(function () {
+                $("#yellow").removeClass("pressed");
+            }, 200);
+        }
+
+        x();
     })
 
 }
+
+
+
+
+nextSequence();
+animationSelectedColours();
+getClickedButtonID();
+playSound();
+animatePress();
+/*
+// if game is over:
+if () {
+    // change h1 text to: "try again"
+    $("#level-title").text("Try again...");
+    // change h1 text color:
+    $("h1").css("color", "red");
+}
+*/
+
+
 
 
 console.log($("#green").attr("id"));

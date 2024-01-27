@@ -26,3 +26,26 @@ $("h1").before("<button>New before button</button>");
 $("h1").after("<button>New after button</button>");
 $("h1").prepend("<button>New prepend button</button>");
 $("h1").append("<button>New append button</button>");
+
+
+// 158. Website Animations with jQuery
+$("button").on("click", function () {
+    // $("h1").hide();
+})
+
+$("button").on("click", function () {
+    // $("h1").show();
+    $("h1").toggle();
+})
+
+/*
+You can also use methods like:
+.fadeOut()
+.fadeIn()
+.fadeToggle()
+.slideUp()
+.slideDown()
+.slideToggle()
+
+$("h1").slideUp().slideDown().animate({opactiy: 0.5});
+*/

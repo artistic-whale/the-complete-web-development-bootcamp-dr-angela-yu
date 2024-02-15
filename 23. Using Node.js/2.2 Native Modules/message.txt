@@ -1,0 +1,2 @@
+Hello from Node.js!
+We can now read files using the readFile method of the Node Module File System!
